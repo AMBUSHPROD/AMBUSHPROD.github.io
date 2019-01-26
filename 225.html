@@ -39,8 +39,13 @@ H1 {
  }
  function func3(){
  var s;
- s=Number(document.getElementById("c_znach").value);
- document.getElementById("c").innerHTML ="<h1>"+"Периметр"+"<br>"+ s*4+"</h1>";
+ s=Number(document.getElementById("k_znach").value);
+ var otvet= Math.sqrt((s+6350)*(s+6350)-6350*6350);
+ document.getElementById("c").innerHTML ="<h1>"+"Расстояние"+"<br>"+ otvet +"</h1>";
+ }  
+ function func4(){
+ var k;
+ document.getElementById("c").innerHTML ="<h1>"+"Объём и Площадь"+"<br>"+ k*k*k + k*k +"</h1>";
  }  
  </script>
  </head>
@@ -52,9 +57,14 @@ H1 {
   <h1>Задача 1.26</h1>
   Радиус r=<input type="text" value="0" id="b_znach">
   <button onclick="func2()">1.26</button>
-  <div id="b"></div> </body> 
+  <div id="b"></div> 
   <h1>Задача 1.27</h1>
-  Радиус r=<input type="text" value="0" id="c_znach">
+  Расстояние р=<input type="text" value="0" id="c_znach">
   <button onclick="func3()">1.27</button>
+  <div id="c"></div> 
+  <h1>Задача 1.28</h1>
+  Объём v , Площадь п <input type="text" value="0" id="k_znach">
+  <button onclick="func4()">1.28</button>
+  <div id="k"></div> 
  </body>
  </html>
