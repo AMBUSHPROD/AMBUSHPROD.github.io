@@ -33,10 +33,15 @@ H1 {
  document.getElementById("kont_a").innerHTML ="<h1>"+"Периметр"+"<br>"+ a*4+"</h1>";
  }
  function func2(){
-var r;
+ var r;
  r=Number(document.getElementById("b_znach").value);
  document.getElementById("b").innerHTML ="<h1>"+"Диаметр"+"<br>"+ r*2+"</h1>";
  }
+ function func3(){
+ var s;
+ s=Number(document.getElementById("c_znach").value);
+ document.getElementById("c").innerHTML ="<h1>"+"Периметр"+"<br>"+ s*4+"</h1>";
+ }  
  </script>
  </head>
  <body>
@@ -48,4 +53,7 @@ var r;
   Радиус r=<input type="text" value="0" id="b_znach">
   <button onclick="func2()">1.26</button>
   <div id="b"></div> </body> 
+  <h1>Задача 1.27</h1>
+  Радиус r=<input type="text" value="0" id="c_znach">
+  <button onclick="func3()">1.27</button>
  </html>
