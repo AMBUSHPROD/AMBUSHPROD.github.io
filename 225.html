@@ -47,6 +47,11 @@ H1 {
  var k;
  document.getElementById("c").innerHTML ="<h1>"+"Объём и Площадь"+"<br>"+ k*k*k + k*k +"</h1>";
  }  
+ function func5(){ 
+ var q;
+ q=Number(document.getElementById("n_znach").value);
+ document.getElementById("kont_a").innerHTML ="<h1> +"<br>"+ q * 6.28+"</h1>";
+ }
  </script>
  </head>
  <body>
@@ -67,5 +72,9 @@ H1 {
   Объём v , Площадь п <input type="text" value="0" id="k_znach">
   <button onclick="func4()">1.28</button>
   <div id="k"></div> 
+  <h1>Задача 1.29</h1>
+  Объём v , Площадь п <input type="text" value="0" id="n_znach">
+  <button onclick="func5()">1.29</button>
+  <div id="n"></div> 
  </body>
  </html>
