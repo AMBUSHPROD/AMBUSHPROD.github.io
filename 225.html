@@ -70,7 +70,19 @@
       h = Number(document.getElementById("h_znach").value);
       g = Number(document.getElementById("g_znach").value);
       document.getElementById("asd").innerHTML = h/g;
+    
     }
+    function func8() {
+      var men;
+      men = Number(document.getElementById("hу_znach").value);
+      document.getElementById("hy").innerHTML = men%10 + ',' + (men-men%10)/10 + ',' + (men%10+(men-men%10)/10) + ',' + men%10*(men-men%10)/10;
+}
+
+    function func9() {
+      var mens;
+      mens = Number(document.getElementById("hуz_znach").value);
+      document.getElementById("hyz").innerHTML = mens%10 + ',' + ((mens%100)-mens%10)/10 + ',' + ((mens-mens%100)/100) + ',' + (((mens-mens%100)/100)+(mens%10+(mens-mens%10)/10)) + ',' + (mens%10*(mens-mens%10)/10);
+}
   </script>
 </head>
 
@@ -106,9 +118,23 @@
   <input type="text" value="0" id="h_znach">
   <input type="text" value="0" id="g_znach">
   <button onclick="func7()">1.32</button>
-  <br></br>
-  <br>Плотность</br>
   <div id="asd"></div>
+  <h1>Задача 2.10</h1> Кол-во единиц , десятков . сумма , произведение
+  <input type="text" value="0" id="hу_znach">
+  <button onclick="func8()">2.10</button>
+  <div id="hy"></div>
+  <h1>Задача 2.12</h1> Кол-во  единиц , десятков , сотен , сумма , произведение
+  <input type="text" value="0" id="hуz_znach">
+  <button onclick="func9()">2.12</button>
+  <div id="hyz"></div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 </body>
 
