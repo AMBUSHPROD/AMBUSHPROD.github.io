@@ -39,111 +39,76 @@ box-shadow: inset 0 10px 15px 0 #ba87b5; }
 function er1(){ 
 x=Number(document.getElementById("x_znach").value); 
 y=Number(document.getElementById("y_znach").value); 
-if (x <= -2 && y>=1) {
+var canvas = document.getElementById('example'); 
+var ctx = canvas.getContext('2d'); 
+if (x <= -1 && y>=-2) {
 document.getElementById("otvet").innerHTML = "Точка в области";
 } else {
 document.getElementById("otvet").innerHTML = "Точка не в области"; 
+  }
 }
-} 
+
+
 
 function er2(){ 
 x=Number(document.getElementById("x_znach").value); 
 y=Number(document.getElementById("y_znach").value); 
-if (y<=1.5 && y>=-2) {
+var canvas = document.getElementById('example'); 
+var ctx = canvas.getContext('2d'); 
+if (y <= -3 || y>=1) {
 document.getElementById("otvet").innerHTML = "Точка в области";
 } else {
 document.getElementById("otvet").innerHTML = "Точка не в области"; 
+  }
 }
-} 
+
 
 
 function er3(){ 
 x=Number(document.getElementById("x_znach").value); 
 y=Number(document.getElementById("y_znach").value); 
-if (x>=1 && x<=2 && y<4) {
+var canvas = document.getElementById('example'); 
+var ctx = canvas.getContext('2d'); 
+if (y <= -3 && y >= -4  || y>=1) {
 document.getElementById("otvet").innerHTML = "Точка в области";
 } else {
 document.getElementById("otvet").innerHTML = "Точка не в области"; 
+  }
 }
-} 
+
 
 
 function er4(){ 
 x=Number(document.getElementById("x_znach").value); 
 y=Number(document.getElementById("y_znach").value); 
-if (y>=2 && y<=4 && x>=1) {
+var canvas = document.getElementById('example'); 
+var ctx = canvas.getContext('2d'); 
+if (x <= 1.5 || x >= -1  || y>=-0.5 || y<= 1.5) {
 document.getElementById("otvet").innerHTML = "Точка в области";
 } else {
 document.getElementById("otvet").innerHTML = "Точка не в области"; 
+  }
 }
-} 
-
-
-function er5(){ 
-x=Number(document.getElementById("x_znach").value); 
-y=Number(document.getElementById("y_znach").value); 
-if (y>=0 && x>=2 || y<=-1 && y<=-2 && x>=1 && x>=3) {
-document.getElementById("otvet").innerHTML = "Точка в области";
-} else {
-document.getElementById("otvet").innerHTML = "Точка не в области"; 
-}
-}
-
-
-function er6(){ 
-x=Number(document.getElementById("x_znach").value); 
-y=Number(document.getElementById("y_znach").value); 
-if (y>=1 && x>=2 || y<=-1.5 && y<=-2 && x>=2) {
-document.getElementById("otvet").innerHTML = "Точка в области";
-} else {
-document.getElementById("otvet").innerHTML = "Точка не в области"; 
-}
-}
-
-
-function er7(){ 
-x=Number(document.getElementById("x_znach").value); 
-y=Number(document.getElementById("y_znach").value); 
-if (y<=-1 && x>=1 && y<=-1.5 && y>=-2 && x<=3) {
-document.getElementById("otvet").innerHTML = "Точка в области";
-} else {
-document.getElementById("otvet").innerHTML = "Точка не в области"; 
-}
-}
-
-
-function er8(){ 
-x=Number(document.getElementById("x_znach").value); 
-y=Number(document.getElementById("y_znach").value); 
-if (y>=0.5 && y>=1.5 || x>=2) {
-document.getElementById("otvet").innerHTML = "Точка в области";
-} else {
-document.getElementById("otvet").innerHTML = "Точка не в области"; 
-}
-}
-
-
 </script> 
 </head> 
 <body> 
 x=<input type="text" value="0" id="x_znach"> <br>
 y=<input type="text" value="0" id="y_znach"> <br>
-
-
-<a href="#" onclick="er1()" class="button purple">3.32а</a> 
-<a href="#" onclick="er2()" class="button purple">3.32б</a> 
-<a href="#" onclick="er3()" class="button purple">3.32в</a> 
-<a href="#" onclick="er4()" class="button purple">3.32г</a> 
-<a href="#" onclick="er5()" class="button purple">3.32д</a>
-<a href="#" onclick="er6()" class="button purple">3.32е</a>
-<a href="#" onclick="er7()" class="button purple">3.32ж</a>
-<a href="#" onclick="er8()" class="button purple">3.32з</a>
+<a href="#" onclick="er1()" class="button purple">3.33а</a> 
+<a href="#" onclick="er2()" class="button purple">3.33б</a> 
+<a href="#" onclick="er3()" class="button purple">3.33в</a> 
+<a href="#" onclick="er4()" class="button purple">3.33г</a> 
+<a href="#" onclick="er5()" class="button purple">3.33д</a> 
+<a href="#" onclick="er6()" class="button purple">3.33е</a> 
+<a href="#" onclick="er7()" class="button purple">3.33ж</a> 
+<a href="#" onclick="er8()" class="button purple">3.33з</a> 
 <br> 
+<canvas id='example'>Обновите браузер</canvas> 
+<br> 
+
 <div id="otvet"></div>
-
-<br> 
-
-
 </body> 
 
 </html>
+
+
