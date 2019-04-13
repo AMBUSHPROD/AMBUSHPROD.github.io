@@ -1,0 +1,85 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function func1() {
+      x = Number(document.getElementById("n_f-1_znach").value);
+      y = Number(document.getElementById("n_f-2_znach").value);
+      var i = x; b = y; sum = i;
+      while (i < b) {
+        i++;
+        sum = sum + i;
+      }
+       document.getElementById("otvet1").innerHTML = document.getElementById("otvet1").innerHTML + sum + " ";
+    }
+    function func2() {
+      z = Number(document.getElementById("n_f-3_znach").value);
+      r = Number(document.getElementById("n_f-4_znach").value);
+      var f = z; q = r; div = f;
+      while (f < q) {
+        f++;
+        div = div * f;
+      }
+       document.getElementById("otvet2").innerHTML = document.getElementById("otvet2").innerHTML + div + " ";
+    }
+    function func3() {
+      z = Number(document.getElementById("n_f-5_znach").value);
+      r = Number(document.getElementById("n_f-6_znach").value);
+      var f = z; q = r; div = f;diver = r-z 
+      while (f < q) {
+        f++;
+        div = div * f;
+      }
+       document.getElementById("otvet3").innerHTML = document.getElementById("otvet3").innerHTML + (div/diver) + " ";
+    } 
+    function func4() {
+      z = Number(document.getElementById("n_f-7_znach").value);
+      r = Number(document.getElementById("n_f-8_znach").value);
+      var f = z; q = r; div = f*f;
+      while (f < q) {
+        f++;
+        div = div + (f*f);
+      }
+       document.getElementById("otvet4").innerHTML = document.getElementById("otvet4").innerHTML + div + " ";
+    }
+  </script>
+</head>
+
+<body>
+
+
+  <h1>Цикл while! 5.27 Г</h1> 
+  <input type="text" value="6" id="n_f-1_znach">
+  <input type="text" value="6" id="n_f-2_znach">
+  <a href="#" onclick="func1()" class="button red text-blanco text-shadow-negra">☭</a>
+  <div id="otvet1"></div>
+<br>
+  <br>
+  <br>
+  <br>
+  <h1>Цикл while! 5.28 Г</h1> 
+  <input type="text" value="6" id="n_f-3_znach">
+  <input type="text" value="6" id="n_f-4_znach">
+  <a href="#" onclick="func2()" class="button red text-blanco text-shadow-negra">☭</a>
+  <div id="otvet2"></div>
+<br>
+  <br>
+  <br>
+  <br>
+  <h1>Цикл while! 5.29 Г</h1> 
+  <input type="text" value="6" id="n_f-5_znach">
+  <input type="text" value="6" id="n_f-6_znach">
+  <a href="#" onclick="func3()" class="button red text-blanco text-shadow-negra">☭</a>
+  <div id="otvet3"></div>
+<br>
+  <br>
+  <br>
+  <br>
+  <h1>Цикл while! 5.30 Г</h1> 
+  <input type="text" value="6" id="n_f-7_znach">
+  <input type="text" value="6" id="n_f-8_znach">
+  <a href="#" onclick="func4()" class="button red text-blanco text-shadow-negra">☭</a>
+  <div id="otvet4"></div>
+</body>
+</html>
