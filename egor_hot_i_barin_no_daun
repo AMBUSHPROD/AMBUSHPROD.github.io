@@ -1,0 +1,66 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script>
+
+    function func1() {
+      var i = 2; n = 3; sum = 0;
+      while (i < 11) {
+        sum = sum + i/n
+        i = i + 1
+        n = n + 1
+        document.getElementById("otvet1").innerHTML = document.getElementById("otvet1").innerHTML + sum + " ";
+      }
+    }
+
+    function func2() {
+      n = Number(document.getElementById("n_f2_znach").value);
+      var i = 1; x = 1; sum = 0;
+      while (x < n+1) {
+        sum = sum + i/x
+        x = x + 1
+        document.getElementById("otvet2").innerHTML = document.getElementById("otvet2").innerHTML + sum + " ";
+      }
+    }
+
+    function func3() {
+      n = Number(document.getElementById("n_f3_znach").value);
+      var i;
+      for (i = 0; i < n; i++) {
+        document.getElementById("otvet3").innerHTML = document.getElementById("otvet3").innerHTML + i + " ";
+      }
+
+    }
+  </script>
+</head>
+
+<body>
+
+<br>
+  <h1>5.33</h1>
+  <input type="text" value="6" id="n_f1_znach">
+  <a href="#" onclick="func1()" class="button red text-blanco text-shadow-negra">♥</a>
+  <div id="otvet1"></div>
+<br>
+  <br>
+  <br>
+  <br>
+  <h1>5.32</h1> n=
+  <input type="text" value="6" id="n_f2_znach">
+  <a href="#" onclick="func2()" class="button yellow text-blanco text-shadow-negra">♂</a>
+  <div id="otvet2"></div>
+<br>
+  <br>
+  <br>
+  <br>
+  <h1>Цикл for</h1> n=
+  <input type="text" value="9" id="n_f3_znach">
+  <a href="#" onclick="func3()" class="button green text-blanco text-shadow-negra">♀</a>
+  <div id="otvet3"></div>
+<br>
+  <br>
+  <br>
+  <br>
+</body>
+</html>
