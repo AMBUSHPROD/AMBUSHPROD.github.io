@@ -4,11 +4,432 @@
   <title>Kuzmin Vladimir Theory of graphs</title>
 </head>
 <body>
-&#1058;&#1077;&#1086;&#769;&#1088;&#1080;&#1103; &#1075;&#1088;&#1072;&#769;&#1092;&#1086;&#1074; &mdash; &#1088;&#1072;&#1079;&#1076;&#1077;&#1083; &#1076;&#1080;&#1089;&#1082;&#1088;&#1077;&#1090;&#1085;&#1086;&#1081; &#1084;&#1072;&#1090;&#1077;&#1084;&#1072;&#1090;&#1080;&#1082;&#1080;, &#1080;&#1079;&#1091;&#1095;&#1072;&#1102;&#1097;&#1080;&#1081;
-&#1089;&#1074;&#1086;&#1081;&#1089;&#1090;&#1074;&#1072; &#1075;&#1088;&#1072;&#1092;&#1086;&#1074;. &#1042; &#1086;&#1073;&#1097;&#1077;&#1084; &#1089;&#1084;&#1099;&#1089;&#1083;&#1077; &#1075;&#1088;&#1072;&#1092; &#1087;&#1088;&#1077;&#1076;&#1089;&#1090;&#1072;&#1074;&#1083;&#1103;&#1077;&#1090;&#1089;&#1103; &#1082;&#1072;&#1082; &#1084;&#1085;&#1086;&#1078;&#1077;&#1089;&#1090;&#1074;&#1086;
-&#1074;&#1077;&#1088;&#1096;&#1080;&#1085; (&#1091;&#1079;&#1083;&#1086;&#1074;), &#1089;&#1086;&#1077;&#1076;&#1080;&#1085;&#1105;&#1085;&#1085;&#1099;&#1093; &#1088;&#1105;&#1073;&#1088;&#1072;&#1084;&#1080;. &#1042; &#1089;&#1090;&#1088;&#1086;&#1075;&#1086;&#1084; &#1086;&#1087;&#1088;&#1077;&#1076;&#1077;&#1083;&#1077;&#1085;&#1080;&#1080; &#1075;&#1088;&#1072;&#1092;&#1086;&#1084;
-&#1085;&#1072;&#1079;&#1099;&#1074;&#1072;&#1077;&#1090;&#1089;&#1103; &#1090;&#1072;&#1082;&#1072;&#1103; &#1087;&#1072;&#1088;&#1072; &#1084;&#1085;&#1086;&#1078;&#1077;&#1089;&#1090;&#1074; , &#1075;&#1076;&#1077; &#1077;&#1089;&#1090;&#1100; &#1087;&#1086;&#1076;&#1084;&#1085;&#1086;&#1078;&#1077;&#1089;&#1090;&#1074;&#1086; &#1083;&#1102;&#1073;&#1086;&#1075;&#1086; &#1089;&#1095;&#1105;&#1090;&#1085;&#1086;&#1075;&#1086;
-&#1084;&#1085;&#1086;&#1078;&#1077;&#1089;&#1090;&#1074;&#1072;, &#1072; &mdash; &#1087;&#1086;&#1076;&#1084;&#1085;&#1086;&#1078;&#1077;&#1089;&#1090;&#1074;&#1086; .<br>
-<img style="width: 716px; height: 443px;" alt="" src="Shot.JPG">
+Тео́рия гра́фов &mdash; раздел дискретной математики, изучающий
+свойства графов. В общем смысле граф представляется как множество
+вершин (узлов), соединённых рёбрами. В строгом определении графом
+называется такая пара множеств , где есть подмножество любого счётного
+множества, а &mdash; подмножество .<br>
+<br>
+Связный граф &mdash; граф, содержащий ровно одну компоненту
+связности.
+Это означает, что между любой парой вершин этого графа существует как
+минимум один путь.<br>
+<br>
+<img src="file:///C:/Users/VladimirKuzmin/Desktop/Shot3.png"
+ alt="" style="width: 430px; height: 368px;"><br>
+<br>
+Несвязный граф -- граф, содержащий более одной компоненты связности<br>
+<img style="width: 427px; height: 371px;" alt=""
+ src="file:///C:/Users/VladimirKuzmin/Desktop/Shot2.png"><br>
+<br>
+Ориентированный граф (кратко орграф) &mdash; (мульти) граф, рёбрам
+которого присвоено направление. Направленные рёбра именуются также
+дугами, а в некоторых источниках и просто рёбрами.<br>
+<img style="width: 465px; height: 376px;" alt=""
+ src="file:///C:/Users/VladimirKuzmin/Desktop/Shot1.png"><br>
+<br>
+Граф, ни одному ребру которого не присвоено направление, называется
+неориентированным графом или неорграфом.<br>
+<img style="width: 430px; height: 368px;" alt=""
+ src="file:///C:/Users/VladimirKuzmin/Desktop/Shot2.png"><br>
+<br>
+Степень или валентность вершины графа &mdash; количество рёбер
+графа , инцидентных вершине .<br>
+<img style="width: 427px; height: 363px;" alt=""
+ src="file:///C:/Users/VladimirKuzmin/Desktop/Shot4.png"><br>
+<br>
+Дерево &mdash; это связный ациклический граф. Связность означает
+наличие путей между любой парой вершин, ацикличность &mdash;
+отсутствие
+циклов и то, что между парами вершин имеется только по одному пути.<br>
+<img style="height: 343px; width: 400px;" alt=""
+ src="file:///C:/Users/VladimirKuzmin/Desktop/Shot5.png"><br>
+<br>
+Эйлеров цикл &mdash; эйлеров путь, являющийся циклом, то есть
+замкнутый
+путь, проходящий через каждое ребро графа ровно по одному разу.<br>
+<img style="width: 354px; height: 418px;" alt=""
+ src="1200px-Labelled_Eulergraph.svg.png"><br>
+<br>
+Эйлерова цепь в графе &mdash; это путь, проходящий по всем рёбрам
+графа и притом только по одному разу.<br>
+<br>
+Простой цикл, проходящий через все вершины графа, называется<br>
+гамильтоновым<br>
+<br>
+<img style="width: 800px; height: 600px;" alt=""
+ src="img11.jpg"><br>
+<img style="width: 1024px; height: 767px;" alt=""
+ src="slide-3.jpg"><br>
+<img style="width: 380px; height: 338px;" alt=""
+ src="%D1%ED%E8%EC%EE%EA.PNG"><br>
+Алгоритм Дейкстры - &nbsp;алгоритм на графах, находящий кратчайший
+путь от одной из вершин графа до всех остальных<br>
+<img style="width: 400px; height: 361px;" alt=""
+ src="%D1%ED%E8%EC%EE%EA.PNG"><br>
+<p
+ style="margin: 0px; padding: 0px; color: rgb(0, 0, 0); font-family: Verdana,Arial,sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">Рассмотрим
+пример нахождение кратчайшего пути. Дана сеть автомобильных дорог,
+соединяющих области города. Некоторые дороги односторонние. Найти
+кратчайшие пути от центра города до каждого города области.<br
+ style="margin: 0px; padding: 0px;">
+<br style="margin: 0px; padding: 0px;">
+Для решения указанной задачи можно использовать <span class="define"
+ style="margin: 0px; padding: 0px; color: rgb(128, 0, 0); font-style: italic; font-weight: bold;">алгоритм
+Дейкстры</span>
+&mdash; алгоритм на графах, изобретённый нидерландским ученым Э.
+Дейкстрой в 1959 году. Находит кратчайшее расстояние от одной из вершин
+графа до всех остальных. Работает только для графов без рёбер
+отрицательного веса.<br style="margin: 0px; padding: 0px;">
+<br style="margin: 0px; padding: 0px;">
+Пусть требуется найти кратчайшие расстояния от 1-й вершины до всех
+остальных.<br style="margin: 0px; padding: 0px;">
+<br style="margin: 0px; padding: 0px;">
+Кружками обозначены вершины, линиями &ndash; пути между ними (ребра
+графа). В кружках обозначены номера вершин, над ребрами обозначен их
+вес &ndash; длина пути. Рядом с каждой вершиной красным обозначена
+метка &ndash; длина кратчайшего пути в эту вершину из вершины 1.</p>
+<p
+ style="margin: 0px; padding: 0px; color: rgb(0, 0, 0); font-family: Verdana,Arial,sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+<img style="width: 361px; height: 278px;" alt=""
+ src="deikstra1.png"><br>
+</p>
+<span
+ style="display: inline ! important; float: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: Verdana,Arial,sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+</span>
+<h2
+ style="margin: 0px; padding: 5px 0px; color: rgb(85, 85, 85); font-family: Verdana,Arial,sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700; letter-spacing: normal; line-height: 2; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; vertical-align: middle; white-space: normal; word-spacing: 0px;">Инициализация</h2>
+<span
+ style="display: inline ! important; float: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: Verdana,Arial,sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+</span>
+<p
+ style="margin: 0px; padding: 0px; color: rgb(0, 0, 0); font-family: Verdana,Arial,sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">Метка
+самой вершины 1 полагается равной 0, метки остальных вершин &ndash;
+недостижимо большое число (в идеале &mdash; бесконечность). Это
+отражает то, что расстояния от вершины 1 до других вершин пока
+неизвестны. Все вершины графа помечаются как непосещенные.<br
+ style="margin: 0px; padding: 0px;">
+<img style="width: 442px; height: 316px;" alt=""
+ src="deikstra2.png"><br>
+</p>
+<span
+ style="display: inline ! important; float: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: Verdana,Arial,sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+</span>
+<h2
+ style="margin: 0px; padding: 5px 0px; color: rgb(85, 85, 85); font-family: Verdana,Arial,sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700; letter-spacing: normal; line-height: 2; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; vertical-align: middle; white-space: normal; word-spacing: 0px;">Первый
+шаг</h2>
+<span
+ style="display: inline ! important; float: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: Verdana,Arial,sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+</span>
+<p
+ style="margin: 0px; padding: 0px; color: rgb(0, 0, 0); font-family: Verdana,Arial,sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">Минимальную
+метку имеет вершина 1. Её соседями являются вершины 2, 3 и 6. Обходим
+соседей вершины по очереди.<br style="margin: 0px; padding: 0px;">
+<br style="margin: 0px; padding: 0px;">
+Первый сосед вершины 1 &ndash; вершина 2, потому что длина пути до
+неё
+минимальна. Длина пути в неё через вершину 1 равна сумме кратчайшего
+расстояния до вершины 1, значению её метки, и длины ребра, идущего из
+1-й в 2-ю, то есть 0 + 7 = 7. Это меньше текущей метки вершины 2
+(10000), поэтому новая метка 2-й вершины равна 7.<br
+ style="margin: 0px; padding: 0px;">
+<img style="width: 442px; height: 316px;" alt=""
+ src="deikstra3.png"><br style="margin: 0px; padding: 0px;">
+Аналогично находим длины пути для всех других соседей (вершины 3 и 6).<br
+ style="margin: 0px; padding: 0px;">
+<br style="margin: 0px; padding: 0px;">
+Все соседи вершины 1 проверены. Текущее минимальное расстояние до
+вершины 1 считается окончательным и пересмотру не подлежит. Вершина 1
+отмечается как посещенная.</p>
+<span
+ style="display: inline ! important; float: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: Verdana,Arial,sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+</span>
+<h2
+ style="margin: 0px; padding: 5px 0px; color: rgb(85, 85, 85); font-family: Verdana,Arial,sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700; letter-spacing: normal; line-height: 2; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; vertical-align: middle; white-space: normal; word-spacing: 0px;">Второй
+шаг</h2>
+<span
+ style="display: inline ! important; float: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: Verdana,Arial,sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+</span>
+<p
+ style="margin: 0px; padding: 0px; color: rgb(0, 0, 0); font-family: Verdana,Arial,sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">Шаг
+1 алгоритма повторяется. Снова находим &laquo;ближайшую&raquo;
+из непосещенных вершин. Это вершина 2 с меткой 7.<br
+ style="margin: 0px; padding: 0px;">
+<br style="margin: 0px; padding: 0px;">
+Снова пытаемся уменьшить метки соседей выбранной вершины, пытаясь
+пройти в них через 2-ю вершину. Соседями вершины 2 являются вершины 1,
+3 и 4.</p>
+<div class="google-auto-placed ap_container"
+ style="margin: 0px; padding: 0px; clear: none; height: auto; text-align: center; width: 100%;"><ins
+ class="adsbygoogle adsbygoogle-noablate"
+ style="margin: auto; padding: 0px; background-color: transparent; display: block;"
+ data-ad-format="auto" data-ad-client="ca-pub-3592083948335083"
+ data-adsbygoogle-status="done"><ins id="aswift_3_expand"
+ style="border-style: none; border-width: medium; margin: 0px; padding: 0px; background-color: transparent; height: 200px; position: relative; visibility: visible; width: 811px;"><ins
+ id="aswift_3_anchor"
+ style="border-style: none; border-width: medium; margin: 0px; padding: 0px; background-color: transparent; display: block; height: 200px; position: relative; visibility: visible; width: 811px;"><iframe
+ name="aswift_3" id="aswift_3" marginwidth="0"
+ marginheight="0" vspace="0" hspace="0"
+ allowfullscreen="true"
+ style="border-style: none; border-width: 0px; margin: 0px; padding: 0px; height: 200px; left: 0px; position: absolute; top: 0px; width: 811px;"
+ allowtransparency="true"
+ onload="var i=this.id,s=window.google_iframe_oncopy,H=s&&s.handlers,h=H&&H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&&d&&(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}"
+ frameborder="0" height="200" scrolling="no"
+ width="811"></iframe></ins></ins></ins></div>
+<br style="margin: 0px; padding: 0px;">
+<br style="margin: 0px; padding: 0px;">
+Вершина 1 уже посещена. Следующий сосед вершины 2 &mdash; вершина
+3,
+так как имеет минимальную метку из вершин, отмеченных как не
+посещённые. Если идти в неё через 2, то длина такого пути будет равна
+17 (7 + 10 = 17). Но текущая метка третьей вершины равна 9, а 9
+&lt;
+17, поэтому метка не меняется.<br style="margin: 0px; padding: 0px;">
+<img style="width: 398px; height: 285px;" alt=""
+ src="deikstra4.png"><br style="margin: 0px; padding: 0px;">
+Ещё один сосед вершины 2 &mdash; вершина 4. Если идти в неё через
+2-ю,
+то длина такого пути будет равна 22 (7 + 15 = 22). Поскольку
+22&lt;10000, устанавливаем метку вершины 4 равной 22.<br
+ style="margin: 0px; padding: 0px;">
+<br style="margin: 0px; padding: 0px;">
+Все соседи вершины 2 просмотрены, помечаем её как посещенную.
+<p></p>
+<span
+ style="display: inline ! important; float: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: Verdana,Arial,sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+</span>
+<h2
+ style="margin: 0px; padding: 5px 0px; color: rgb(85, 85, 85); font-family: Verdana,Arial,sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700; letter-spacing: normal; line-height: 2; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; vertical-align: middle; white-space: normal; word-spacing: 0px;">Третий
+шаг</h2>
+<span
+ style="display: inline ! important; float: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: Verdana,Arial,sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+</span>
+<p
+ style="margin: 0px; padding: 0px; color: rgb(0, 0, 0); font-family: Verdana,Arial,sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">Повторяем
+шаг алгоритма, выбрав вершину 3. После её
+&laquo;обработки&raquo; получим следующие результаты.<br
+ style="margin: 0px; padding: 0px;">
+<img style="width: 442px; height: 316px;" alt=""
+ src="deikstra5.png"><br>
+</p>
+<span
+ style="display: inline ! important; float: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: Verdana,Arial,sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+</span>
+<h2
+ style="margin: 0px; padding: 5px 0px; color: rgb(85, 85, 85); font-family: Verdana,Arial,sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700; letter-spacing: normal; line-height: 2; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; vertical-align: middle; white-space: normal; word-spacing: 0px;">Четвертый
+шаг</h2>
+<span
+ style="display: inline ! important; float: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: Verdana,Arial,sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+</span>
+<p
+ style="margin: 0px; padding: 0px; color: rgb(0, 0, 0); font-family: Verdana,Arial,sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;"><img
+ style="width: 442px; height: 316px;" alt=""
+ src="deikstra6.png"><br>
+</p>
+<span
+ style="display: inline ! important; float: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: Verdana,Arial,sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+</span>
+<h2
+ style="margin: 0px; padding: 5px 0px; color: rgb(85, 85, 85); font-family: Verdana,Arial,sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700; letter-spacing: normal; line-height: 2; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; vertical-align: middle; white-space: normal; word-spacing: 0px;">Пятый
+шаг</h2>
+<span
+ style="display: inline ! important; float: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: Verdana,Arial,sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;"></span><img
+ style="width: 442px; height: 316px;" alt=""
+ src="deikstra7.png"><span
+ style="display: inline ! important; float: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: Verdana,Arial,sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;"></span>
+<h2
+ style="margin: 0px; padding: 5px 0px; color: rgb(85, 85, 85); font-family: Verdana,Arial,sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700; letter-spacing: normal; line-height: 2; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; vertical-align: middle; white-space: normal; word-spacing: 0px;">Шестой
+шаг</h2>
+<span
+ style="display: inline ! important; float: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: Verdana,Arial,sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+</span>
+<p
+ style="margin: 0px; padding: 0px; color: rgb(0, 0, 0); font-family: Verdana,Arial,sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;"><img
+ style="width: 442px; height: 316px;" alt=""
+ src="deikstra8.png"><br style="margin: 0px; padding: 0px;">
+Таким образом, кратчайшим путем из вершины 1 в вершину 5 будет путь
+через вершины <strong style="margin: 0px; padding: 0px;">1
+&mdash; 3 &mdash; 6 &mdash; 5</strong>, поскольку
+таким путем мы набираем минимальный вес, равный 20.<br
+ style="margin: 0px; padding: 0px;">
+<br style="margin: 0px; padding: 0px;">
+&nbsp;<br style="margin: 0px; padding: 0px;">
+Займемся выводом кратчайшего пути. Мы знаем длину пути для каждой
+вершины, и теперь будем рассматривать вершины с конца. Рассматриваем
+конечную вершину (в данном случае &mdash; вершина <strong
+ style="margin: 0px; padding: 0px;">5</strong>),
+и для всех вершин, с которой она связана, находим длину пути, вычитая
+вес соответствующего ребра из длины пути конечной вершины.<br
+ style="margin: 0px; padding: 0px;">
+Так, вершина <strong style="margin: 0px; padding: 0px;">5</strong>
+имеет длину пути <strong style="margin: 0px; padding: 0px;">20</strong>.
+Она связана с вершинами <strong style="margin: 0px; padding: 0px;">6</strong>
+и <strong style="margin: 0px; padding: 0px;">4</strong>.<br
+ style="margin: 0px; padding: 0px;">
+Для вершины <strong style="margin: 0px; padding: 0px;">6</strong>
+получим вес <strong style="margin: 0px; padding: 0px;">20
+&mdash; 9 = 11 (совпал)</strong>.<br
+ style="margin: 0px; padding: 0px;">
+Для вершины <strong style="margin: 0px; padding: 0px;">4</strong>
+получим вес <strong style="margin: 0px; padding: 0px;">20
+&mdash; 6 = 14 (не совпал)</strong>.<br
+ style="margin: 0px; padding: 0px;">
+Если в результате мы получим значение, которое совпадает с длиной пути
+рассматриваемой вершины (в данном случае &mdash; вершина <strong
+ style="margin: 0px; padding: 0px;">6</strong>), то
+именно из нее был осуществлен переход в конечную вершину. Отмечаем эту
+вершину на искомом пути.<br style="margin: 0px; padding: 0px;">
+Далее определяем ребро, через которое мы попали в вершину <strong
+ style="margin: 0px; padding: 0px;">6</strong>. И так
+пока не дойдем до начала.<br style="margin: 0px; padding: 0px;">
+Если в результате такого обхода у нас на каком-то шаге совпадут
+значения для нескольких вершин, то можно взять любую из них &mdash;
+несколько путей будут иметь одинаковую длину.<br
+ style="margin: 0px; padding: 0px;">
+<br style="margin: 0px; padding: 0px;">
+&nbsp;</p>
+<span
+ style="display: inline ! important; float: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: Verdana,Arial,sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+</span>
+<h2
+ style="margin: 0px; padding: 5px 0px; color: rgb(85, 85, 85); font-family: Verdana,Arial,sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700; letter-spacing: normal; line-height: 2; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; vertical-align: middle; white-space: normal; word-spacing: 0px;">Реализация
+алгоритма Дейкстры</h2>
+<span
+ style="display: inline ! important; float: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: Verdana,Arial,sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+</span>
+<p
+ style="margin: 0px; padding: 0px; color: rgb(0, 0, 0); font-family: Verdana,Arial,sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">Для
+хранения весов графа используется квадратная матрица. В заголовках
+строк и столбцов находятся вершины графа. А веса дуг графа размещаются
+во внутренних ячейках таблицы. Граф не содержит петель, поэтому на
+главной диагонали матрицы содержатся нулевые значения.</p>
+<span
+ style="display: inline ! important; float: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: Verdana,Arial,sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+</span>
+<div class="table-container"
+ style="margin: 0px 0px 1em; padding: 0px; color: rgb(0, 0, 0); font-family: Verdana,Arial,sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; width: 100%; word-spacing: 0px;">
+<table
+ style="margin: 0px auto; padding: 0px; border-collapse: collapse; text-align: left; width: 100%;">
+  <thead style="margin: 0px; padding: 0px;"> <tr
+ style="margin: 0px; padding: 0px;">
+    <td
+ style="border: 1px solid rgb(0, 0, 0); margin: 0px; padding: 5px; background-color: rgb(221, 187, 153); color: rgb(128, 0, 0); font-weight: bold; text-align: center; vertical-align: middle;"></td>
+    <td
+ style="border: 1px solid rgb(0, 0, 0); margin: 0px; padding: 5px; background-color: rgb(221, 187, 153); color: rgb(128, 0, 0); font-weight: bold; text-align: center; vertical-align: middle;">1</td>
+    <td
+ style="border: 1px solid rgb(0, 0, 0); margin: 0px; padding: 5px; background-color: rgb(221, 187, 153); color: rgb(128, 0, 0); font-weight: bold; text-align: center; vertical-align: middle;">2</td>
+    <td
+ style="border: 1px solid rgb(0, 0, 0); margin: 0px; padding: 5px; background-color: rgb(221, 187, 153); color: rgb(128, 0, 0); font-weight: bold; text-align: center; vertical-align: middle;">3</td>
+    <td
+ style="border: 1px solid rgb(0, 0, 0); margin: 0px; padding: 5px; background-color: rgb(221, 187, 153); color: rgb(128, 0, 0); font-weight: bold; text-align: center; vertical-align: middle;">4</td>
+    <td
+ style="border: 1px solid rgb(0, 0, 0); margin: 0px; padding: 5px; background-color: rgb(221, 187, 153); color: rgb(128, 0, 0); font-weight: bold; text-align: center; vertical-align: middle;">5</td>
+    <td
+ style="border: 1px solid rgb(0, 0, 0); margin: 0px; padding: 5px; background-color: rgb(221, 187, 153); color: rgb(128, 0, 0); font-weight: bold; text-align: center; vertical-align: middle;">6</td>
+  </tr>
+  </thead> <tbody style="margin: 0px; padding: 0px;">
+    <tr style="margin: 0px; padding: 0px;">
+      <td
+ style="border: 1px solid rgb(0, 0, 0); margin: 0px; padding: 5px; background-color: rgb(221, 187, 153); color: rgb(128, 0, 0); font-weight: bold; text-align: center; vertical-align: middle;">1</td>
+      <td
+ style="border: 1px solid rgb(0, 0, 0); margin: 0px; padding: 5px; vertical-align: middle;">0</td>
+      <td
+ style="border: 1px solid rgb(0, 0, 0); margin: 0px; padding: 5px; vertical-align: middle;">7</td>
+      <td
+ style="border: 1px solid rgb(0, 0, 0); margin: 0px; padding: 5px; vertical-align: middle;">9</td>
+      <td
+ style="border: 1px solid rgb(0, 0, 0); margin: 0px; padding: 5px; vertical-align: middle;">0</td>
+      <td
+ style="border: 1px solid rgb(0, 0, 0); margin: 0px; padding: 5px; vertical-align: middle;">0</td>
+      <td
+ style="border: 1px solid rgb(0, 0, 0); margin: 0px; padding: 5px; vertical-align: middle;">14</td>
+    </tr>
+    <tr style="margin: 0px; padding: 0px;">
+      <td
+ style="border: 1px solid rgb(0, 0, 0); margin: 0px; padding: 5px; background-color: rgb(221, 187, 153); color: rgb(128, 0, 0); font-weight: bold; text-align: center; vertical-align: middle;">2</td>
+      <td
+ style="border: 1px solid rgb(0, 0, 0); margin: 0px; padding: 5px; vertical-align: middle;">7</td>
+      <td
+ style="border: 1px solid rgb(0, 0, 0); margin: 0px; padding: 5px; vertical-align: middle;">0</td>
+      <td
+ style="border: 1px solid rgb(0, 0, 0); margin: 0px; padding: 5px; vertical-align: middle;">10</td>
+      <td
+ style="border: 1px solid rgb(0, 0, 0); margin: 0px; padding: 5px; vertical-align: middle;">15</td>
+      <td
+ style="border: 1px solid rgb(0, 0, 0); margin: 0px; padding: 5px; vertical-align: middle;">0</td>
+      <td
+ style="border: 1px solid rgb(0, 0, 0); margin: 0px; padding: 5px; vertical-align: middle;">0</td>
+    </tr>
+    <tr style="margin: 0px; padding: 0px;">
+      <td
+ style="border: 1px solid rgb(0, 0, 0); margin: 0px; padding: 5px; background-color: rgb(221, 187, 153); color: rgb(128, 0, 0); font-weight: bold; text-align: center; vertical-align: middle;">3</td>
+      <td
+ style="border: 1px solid rgb(0, 0, 0); margin: 0px; padding: 5px; vertical-align: middle;">9</td>
+      <td
+ style="border: 1px solid rgb(0, 0, 0); margin: 0px; padding: 5px; vertical-align: middle;">10</td>
+      <td
+ style="border: 1px solid rgb(0, 0, 0); margin: 0px; padding: 5px; vertical-align: middle;">0</td>
+      <td
+ style="border: 1px solid rgb(0, 0, 0); margin: 0px; padding: 5px; vertical-align: middle;">11</td>
+      <td
+ style="border: 1px solid rgb(0, 0, 0); margin: 0px; padding: 5px; vertical-align: middle;">0</td>
+      <td
+ style="border: 1px solid rgb(0, 0, 0); margin: 0px; padding: 5px; vertical-align: middle;">2</td>
+    </tr>
+    <tr style="margin: 0px; padding: 0px;">
+      <td
+ style="border: 1px solid rgb(0, 0, 0); margin: 0px; padding: 5px; background-color: rgb(221, 187, 153); color: rgb(128, 0, 0); font-weight: bold; text-align: center; vertical-align: middle;">4</td>
+      <td
+ style="border: 1px solid rgb(0, 0, 0); margin: 0px; padding: 5px; vertical-align: middle;">0</td>
+      <td
+ style="border: 1px solid rgb(0, 0, 0); margin: 0px; padding: 5px; vertical-align: middle;">15</td>
+      <td
+ style="border: 1px solid rgb(0, 0, 0); margin: 0px; padding: 5px; vertical-align: middle;">11</td>
+      <td
+ style="border: 1px solid rgb(0, 0, 0); margin: 0px; padding: 5px; vertical-align: middle;">0</td>
+      <td
+ style="border: 1px solid rgb(0, 0, 0); margin: 0px; padding: 5px; vertical-align: middle;">6</td>
+      <td
+ style="border: 1px solid rgb(0, 0, 0); margin: 0px; padding: 5px; vertical-align: middle;">0</td>
+    </tr>
+    <tr style="margin: 0px; padding: 0px;">
+      <td
+ style="border: 1px solid rgb(0, 0, 0); margin: 0px; padding: 5px; background-color: rgb(221, 187, 153); color: rgb(128, 0, 0); font-weight: bold; text-align: center; vertical-align: middle;">5</td>
+      <td
+ style="border: 1px solid rgb(0, 0, 0); margin: 0px; padding: 5px; vertical-align: middle;">0</td>
+      <td
+ style="border: 1px solid rgb(0, 0, 0); margin: 0px; padding: 5px; vertical-align: middle;">0</td>
+      <td
+ style="border: 1px solid rgb(0, 0, 0); margin: 0px; padding: 5px; vertical-align: middle;">0</td>
+      <td
+ style="border: 1px solid rgb(0, 0, 0); margin: 0px; padding: 5px; vertical-align: middle;">6</td>
+      <td
+ style="border: 1px solid rgb(0, 0, 0); margin: 0px; padding: 5px; vertical-align: middle;">0</td>
+      <td
+ style="border: 1px solid rgb(0, 0, 0); margin: 0px; padding: 5px; vertical-align: middle;">9</td>
+    </tr>
+    <tr style="margin: 0px; padding: 0px;">
+      <td
+ style="border: 1px solid rgb(0, 0, 0); margin: 0px; padding: 5px; background-color: rgb(221, 187, 153); color: rgb(128, 0, 0); font-weight: bold; text-align: center; vertical-align: middle;">6</td>
+      <td
+ style="border: 1px solid rgb(0, 0, 0); margin: 0px; padding: 5px; vertical-align: middle;">14</td>
+      <td
+ style="border: 1px solid rgb(0, 0, 0); margin: 0px; padding: 5px; vertical-align: middle;">0</td>
+      <td
+ style="border: 1px solid rgb(0, 0, 0); margin: 0px; padding: 5px; vertical-align: middle;">2</td>
+      <td
+ style="border: 1px solid rgb(0, 0, 0); margin: 0px; padding: 5px; vertical-align: middle;">0</td>
+      <td
+ style="border: 1px solid rgb(0, 0, 0); margin: 0px; padding: 5px; vertical-align: middle;">9</td>
+      <td
+ style="border: 1px solid rgb(0, 0, 0); margin: 0px; padding: 5px; vertical-align: middle;">0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<br>
+<br>
+<br>
+<br>
 </body>
 </html>
